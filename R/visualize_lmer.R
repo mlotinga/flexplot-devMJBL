@@ -31,8 +31,8 @@ add_geoms_to_mixed_plot = function(prediction, step3, object, formula, ...) {
   if (is.numeric(d[,terms[1]])){
 
     # convert to ordinal when there's <5 unique values
-    m    = convert_numeric_to_ordinal(m,    terms[1])
-    newd = convert_numeric_to_ordinal(newd, terms[1])
+    #m    = convert_numeric_to_ordinal(m,    terms[1])
+    #newd = convert_numeric_to_ordinal(newd, terms[1])
     
     # convert to ordered factor if original was an ordered factor
     if (class(step3$data[,terms[1]])[1]=="ordered" &
