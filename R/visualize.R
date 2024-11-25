@@ -292,10 +292,10 @@ visualize.glmerMod = function(object, plot=c("all", "residuals", "model"), formu
       
       ### flexplot turns <5 unique numeric values to ordinal variable
       ### we need to do the same here
-      if (is.numeric(m[,terms[1]]) & length(unique(m[,terms[1]]))<5){
-        m[,terms[1]] = factor(m[,terms[1]], ordered=TRUE)
-        newd[,terms[1]] = factor(newd[,terms[1]], ordered=TRUE)
-      }	
+      #if (is.numeric(m[,terms[1]]) & length(unique(m[,terms[1]]))<5){
+      #  m[,terms[1]] = factor(m[,terms[1]], ordered=TRUE)
+      #  newd[,terms[1]] = factor(newd[,terms[1]], ordered=TRUE)
+      #}	
       
       step3 = step3+ 
         geom_line(data=m, 
